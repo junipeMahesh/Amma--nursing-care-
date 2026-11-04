@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#087f83">
+<meta name="description" content="Amma Nursing Care by Junipe Mahesh, GNM Nurse. Nursing services in Jaggampeta and surrounding areas.">
+<title>Amma Nursing Care | Junipe Mahesh</title>
+<link rel="icon" type="image/png" href="assets/amma-nursing-care-logo.png">
+<style>
+:root{--teal:#078b8b;--navy:#123c70;--blue:#2478c8;--mint:#e8fbf7;--gold:#f3c75b;--ink:#18354a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fffaf1;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.topline{background:linear-gradient(90deg,#073d65,#078b8b,#16a7a0);color:#fff;text-align:center;padding:9px 12px;font-size:13px;font-weight:700;letter-spacing:.3px}
+header{position:sticky;top:0;z-index:10;background:#fffdf8ed;backdrop-filter:blur(12px);box-shadow:0 4px 22px #123c7017}
+.nav{max-width:1160px;margin:auto;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:900;font-size:19px;letter-spacing:.4px}
+.brand img{width:65px;height:65px;object-fit:contain;border-radius:50%;border:3px solid #0b9693;box-shadow:0 3px 12px #078b8b30;background:#fff}
+nav{display:flex;align-items:center;gap:24px;font-weight:700;font-size:14px}
+nav a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 21px;border-radius:40px;color:white;font-weight:800;background:linear-gradient(110deg,#087f83,#13aaa0);box-shadow:0 7px 18px #087f8330;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.btn.whatsapp{background:linear-gradient(110deg,#078b49,#20b86b)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 20%,#f8e9c6 0,transparent 30%),linear-gradient(125deg,#fff1d6,#fffdf8 48%,#edf5e8);padding:48px 20px 60px}
+.hero:before,.hero:after{content:"✚";position:absolute;color:#078b8b12;font-size:150px;pointer-events:none}
+.hero:before{top:5px;left:3%}.hero:after{bottom:0;right:5%}
+.hero-inner{position:relative;z-index:1;max-width:1160px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.logo-hero{width:145px;height:145px;object-fit:contain;border-radius:50%;border:5px solid white;box-shadow:0 9px 28px #0b59602b;background:#fff;margin-bottom:14px}
+.kicker{display:inline-block;padding:6px 13px;border-radius:30px;background:#d8f7ee;color:#087e75;font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(38px,5.2vw,62px);line-height:1.04;color:var(--navy);margin:14px 0 8px;letter-spacing:-1.5px}
+h1 span{color:#07958d}
+.role{font-size:21px;font-weight:800;color:#c18a20;margin:0 0 12px}
+.lead{font-size:18px;color:#526d7b;max-width:590px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:24px}
+.hero-poster{width:100%;max-width:470px;display:block;margin:auto;border-radius:22px;border:6px solid #fff;box-shadow:0 16px 40px #123c7029}
+.section{max-width:1160px;margin:auto;padding:68px 22px}
+.heading{text-align:center;margin-bottom:34px}
+.eyebrow{color:#07958d;font-weight:900;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:clamp(28px,4vw,40px);color:var(--navy);margin:5px 0}
+.heading p{color:#647d8a;margin:0}
+.services{display:grid;grid-template-columns:repeat(5,1fr);gap:17px}
+.card{position:relative;overflow:hidden;background:#fffefa;border:1px solid #eee2cb;border-radius:18px;padding:22px 14px;text-align:center;box-shadow:0 8px 24px #123c700d;transition:.22s}
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--accent,#0b9993)}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 28px #123c7020}
+.icon{width:64px;height:64px;margin:0 auto 10px;border-radius:20px;display:grid;place-items:center;font-size:32px;background:var(--tint,#e2f8f5)}
+.card h3{font-size:16px;color:var(--navy);margin:4px 0}
+.card p{font-size:13px;color:#71838d;margin:0}
+.about{background:linear-gradient(120deg,#fff0d2,#f5f7e9)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.about-copy{background:#fff;border-radius:22px;padding:30px;box-shadow:0 10px 30px #123c7010}
+.about-copy p{color:#5b7180}
+.points{list-style:none;padding:0;margin:20px 0}
+.points li{padding:8px 0;font-weight:700;color:#315467}
+.points li:before{content:"✓";display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#d9f8e8;color:#0a9857;margin-right:10px}
+.poster{width:100%;max-width:470px;display:block;margin:auto;border-radius:18px;box-shadow:0 14px 35px #123c7025}
+.contact{background:linear-gradient(120deg,#103e70,#087f83 70%,#10a79a);color:#fff}
+.contact h2{color:#fff}.contact .heading p{color:#d9f7f5}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.contact-box{background:#ffffff16;border:1px solid #ffffff48;border-radius:18px;padding:23px;text-align:center}
+.contact-box strong{display:block;font-size:18px;margin-bottom:7px}
+.contact-box a{font-weight:800;color:#fff}
+.contact-box a:hover{text-decoration:underline}
+footer{background:#092d4a;color:#dcebf1;text-align:center;padding:22px;font-size:13px}
+.float{position:fixed;right:18px;bottom:18px;z-index:12;background:linear-gradient(120deg,#078b49,#20b86b);color:#fff;padding:13px 19px;border-radius:40px;font-weight:900;box-shadow:0 6px 22px #0003}
+@media(max-width:900px){.services{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.nav{flex-wrap:wrap;justify-content:center}.brand{width:100%;justify-content:center}.brand img{width:58px;height:58px}nav{gap:16px;justify-content:center;flex-wrap:wrap}.hero-inner,.about-grid{grid-template-columns:1fr;text-align:center}.logo-hero{width:125px;height:125px}.lead{margin:auto}.actions{justify-content:center}.hero-poster{max-width:390px}.services{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.services{grid-template-columns:1fr 1fr}.card{padding:18px 9px}.card h3{font-size:14px}.brand{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="topline">♡ Your Health • Our Priority &nbsp; | &nbsp; Jaggampeta &amp; Surrounding Areas</div>
+<header><div class="nav">
+<a class="brand" href="#home"><img src="assets/amma-nursing-care-logo.png" alt="Amma Nursing Care logo"><span>AMMA NURSING CARE</span></a>
+<nav aria-label="Main navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div>
+<img class="logo-hero" src="assets/amma-nursing-care-logo.png" alt="Amma Nursing Care official logo">
+<div><span class="kicker">Caring hands • Trusted service</span></div>
+<h1>AMMA <span>NURSING CARE</span></h1>
+<p class="role">Junipe Mahesh – GNM Nurse</p>
+<p class="lead">Quality nursing care and basic healthcare support for you and your family in Jaggampeta and surrounding areas.</p>
+<div class="actions"><a class="btn" href="tel:+917993187832">☎ Call 7993187832</a><a class="btn whatsapp" href="https://wa.me/917993187832" target="_blank" rel="noopener">☘ WhatsApp Us</a></div>
+</div>
+<img class="hero-poster" src="assets/amma-nursing-care-poster.png" alt="Amma Nursing Care services poster">
+</div></section>
+<section class="section" id="services">
+<div class="heading"><div class="eyebrow">Professional nursing support</div><h2>Our Nursing Services</h2><p>Attentive care with a focus on comfort, safety and hygiene.</p></div>
+<div class="services">
+<article class="card" style="--accent:#e4a52e;--tint:#fff4d9"><div class="icon">🩹</div><h3>Wound Dressing</h3><p>Basic wound dressing and care.</p></article>
+<article class="card" style="--accent:#e45b78;--tint:#fff0f3"><div class="icon">💉</div><h3>Injections</h3><p>As prescribed by a doctor.</p></article>
+<article class="card" style="--accent:#2679c9;--tint:#eaf4ff"><div class="icon">🧴</div><h3>IV Cannulation</h3><p>IV access nursing support.</p></article>
+<article class="card" style="--accent:#8656b8;--tint:#f4edff"><div class="icon">🌬️</div><h3>Nebulization</h3><p>Nebulization support as advised.</p></article>
+<article class="card" style="--accent:#dc6a37;--tint:#fff0e7"><div class="icon">🧰</div><h3>First Aid</h3><p>Basic first-aid assistance.</p></article>
+<article class="card" style="--accent:#159a9a;--tint:#e4fafa"><div class="icon">🩺</div><h3>BP Checking</h3><p>Blood pressure monitoring.</p></article>
+<article class="card" style="--accent:#2377b9;--tint:#eaf5ff"><div class="icon">🩸</div><h3>Blood Sugar</h3><p>Blood glucose checking.</p></article>
+<article class="card" style="--accent:#d94f83;--tint:#fff0f6"><div class="icon">💓</div><h3>Pulse / Heart Rate</h3><p>Pulse and heart-rate monitoring.</p></article>
+<article class="card" style="--accent:#6d9b42;--tint:#f1f8e9"><div class="icon">🏥</div><h3>General Health Checkup</h3><p>Basic health observations.</p></article>
+<article class="card" style="--accent:#d89a24;--tint:#fff7df"><div class="icon">➕</div><h3>Post-Surgical Care</h3><p>Recovery nursing support.</p></article>
+</div></section>
+<section class="about" id="about"><div class="section about-grid">
+<div class="about-copy"><div class="eyebrow">About Amma Nursing Care</div><h2>Care with compassion</h2>
+<p>Amma Nursing Care is led by <strong>Junipe Mahesh, GNM Nurse</strong>, providing nursing support in Jaggampeta and nearby areas.</p>
+<ul class="points"><li>Safe and hygienic care</li><li>Personalized attention</li><li>Respectful and compassionate service</li><li>Affordable nursing support</li></ul>
+<p><strong>Experience:</strong> 7 years</p></div>
+<img class="poster" src="assets/amma-nursing-care-poster.png" alt="Amma Nursing Care contact and service poster">
+</div></section>
+<section class="contact" id="contact"><div class="section">
+<div class="heading"><div class="eyebrow" style="color:#b8fff0">We are here to help</div><h2>Contact Amma Nursing Care</h2><p>For service details and availability, please call.</p></div>
+<div class="contact-grid">
+<div class="contact-box"><strong>📍 Service Area</strong>Jaggampeta &amp; Surrounding Areas</div>
+<div class="contact-box"><strong>☎ Phone</strong><a href="tel:+917993187832">7993187832</a><br><a href="tel:+918019017530">8019017530</a></div>
+<div class="contact-box"><strong>💬 WhatsApp</strong><a href="https://wa.me/917993187832" target="_blank" rel="noopener">Chat with us</a></div>
+</div></div></section>
+</main>
+<footer>© <span id="year"></span> Amma Nursing Care • Junipe Mahesh – GNM Nurse<br>For emergencies, contact your nearest hospital or emergency services.</footer>
+<a class="float" href="https://wa.me/917993187832" target="_blank" rel="noopener">WhatsApp</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
